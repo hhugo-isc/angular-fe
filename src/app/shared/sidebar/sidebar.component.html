@@ -1,0 +1,9 @@
+<div class="bg-dark boder-right p-3" id="sidebar">
+    <h3 class="text-light"> Hola mundo</h3>
+    <hr class="text-light">
+    <div class="list-group list-reset">
+        <a *ngFor="let termino of historial" class="list-group-item list-group-item-action" href="#"
+            (click)="buscar(termino)"
+        >{{ termino | titlecase }}</a>
+    </div>
+</div>
